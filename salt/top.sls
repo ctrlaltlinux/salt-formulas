@@ -2,3 +2,5 @@ base:
   '*':
     - epel
     - ntp
+    - yubikey
+ 
