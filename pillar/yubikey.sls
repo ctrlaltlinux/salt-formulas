@@ -1,0 +1,3 @@
+yubikey:
+  tokens:
+    - 'root:ccccccbhlggn'

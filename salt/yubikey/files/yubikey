@@ -1,0 +1,3 @@
+{%- for token in salt['pillar.get']('yubikey:tokens', '') -%}
+{{ token }}
+{%- endfor -%}
