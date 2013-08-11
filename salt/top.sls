@@ -4,3 +4,7 @@ base:
     - ntp
     - yubikey
  
+  'master.ctrlaltlinux.net':
+    - yubikey.server
+
+  

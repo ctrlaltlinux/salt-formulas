@@ -1,3 +1,2 @@
 include:
-  - .yubikey-client
-  
+  - .client
