@@ -1,4 +1,5 @@
 base:
   '*':
-    - epel
-    - ntp
+    {%- for sls in salt['pillar.items']() %}
+    - {{ sls }}
+    {%- endfor %}
