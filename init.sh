@@ -16,8 +16,11 @@ service salt-master start
 service salt-minion start
 
 # Wait for the minion to check in and then sign the key
+echo "Waiting 10 seconds for the minion to connect"
 sleep 10
 salt-key -a '*' -y
 
 # Finally, apply the Salt configuration
+echo "Waiting another 10 seconds for the minion to connect again"
+sleep 10
 salt \* state.highstate
