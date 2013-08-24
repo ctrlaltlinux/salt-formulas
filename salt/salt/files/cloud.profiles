@@ -1,0 +1,4 @@
+centos:
+    provider: rackspace
+    size: 512MB Standard Instance
+    image: CentOS 6.4
